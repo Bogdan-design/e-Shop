@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
-import buttonFavorite from '../../asset/imeges/ButtonLike.svg'
-import buttonCompare from '../../asset/imeges/ButtonStatistic.svg'
-import buttonUser from '../../asset/imeges/ButtonUser.svg'
-import logo from '../../asset/imeges/logo.svg'
-import search from '../../asset/imeges/Search.svg'
+import logo from "../asset/imeges/logo.svg"
+import search from "../asset/imeges/Search.svg"
+import buttonFavorite from "../asset/imeges/ButtonLike.svg"
+import buttonCompare from "../asset/imeges/ButtonStatistic.svg"
+import userIcon from "../asset/imeges/ButtonUser.svg"
+
 
 
 export const Header = () => {
@@ -33,7 +34,7 @@ export const Header = () => {
                     <img src={buttonCompare} alt="button-compare"/>
                 </a>
                 <a href="">
-                    <img src={buttonUser} alt="button-profile"/>
+                    <img src={userIcon} alt="button-profile"/>
                 </a>
             </div>
         </HeaderStyled>
@@ -64,6 +65,9 @@ const HeaderStyled = styled.header`
 const LogoBox = styled.div`
   display: flex;
   max-width: 350px;
+  p {
+   padding: 0 0 0 10px;
+  }
   
 `
 

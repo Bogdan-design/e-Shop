@@ -1,31 +1,15 @@
 import React from 'react';
+import {Header} from "./components/Header";
+import {Banners} from "./components/Banners";
 
-import './App.css';
-import {Header} from "./components/header/Header";
 
 function App() {
     return (
         <div className="App">
             <Header/>
+            <Banners/>
 
-            <section>
-                <div>
-                    <h4>
-                        <span>1.8 млн </span>товаров в <span>2272</span> магазинах найди, сравни, выберай!
-                    </h4>
-                    <button>
-                        Go to categories
-                    </button>
-                </div>
-                <div>
-                    <h4>
-                        <span>Top 10</span> smartphones in 2023
-                    </h4>
-                    <button>
-                        Look
-                    </button>
-                </div>
-            </section>
+
             <section>
                 <h4>Best choice</h4>
                 <div>
