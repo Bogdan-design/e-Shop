@@ -54,6 +54,7 @@ const SearchBox =styled.div`
 
 const HeaderStyled = styled.header`
   display: flex;
+  border-bottom:2px solid #F2F5F9;
   justify-content: space-between;
   align-items: center;
   height: 76px;
@@ -66,7 +67,7 @@ const LogoBox = styled.div`
   display: flex;
   max-width: 350px;
   p {
-   padding: 0 0 0 10px;
+   margin: 0 0 0 10px;
   }
   
 `

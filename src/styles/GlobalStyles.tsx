@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle<TemplateStringsArray>`
   }
 
   body {
-    width: 1440px;
+    
 
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
