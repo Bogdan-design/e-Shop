@@ -12,9 +12,6 @@ function App() {
                 <Header/>
                 <Banners/>
                 <BestChoice/>
-
-
-
                 <section className='goal'>
                     <h3>Our goal is to create a fantastic
                         service for all consumers</h3>
