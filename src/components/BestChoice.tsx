@@ -10,24 +10,26 @@ import consoles from "../asset/imeges/BestChoiceImeges/Consoles.png"
 import headphones from "../asset/imeges/BestChoiceImeges/Headphones.png"
 import portableColumns from "../asset/imeges/BestChoiceImeges/PortableColumns.png"
 import accessories from "../asset/imeges/BestChoiceImeges/Accessories.png"
+import {CardCategories} from "../common/CardCategories";
 
 type CategoriesType = {
     id: number
     title: string
     image:string
+    path:string
 }
 
 export const BestChoice = () => {
 
     const categories: CategoriesType[] = [
-        {id:1,title:'smartphones',image:smartphones},
-        {id:2,title:'laptops',image:laptops},
-        {id:3,title:'tablets',image:tablets},
-        {id:4,title:'smartWatches',image:smartWatches},
-        {id:5,title:'consoles',image:consoles},
-        {id:6,title:'headphones',image:headphones},
-        {id:7,title:'portableColumns',image:portableColumns},
-        {id:8,title:'accessories',image:accessories},
+        {id:1,title:'smartphones',image:smartphones,path:'smartphones'},
+        {id:2,title:'laptops',image:laptops,path:'laptops'},
+        {id:3,title:'tablets',image:tablets,path:'tablets'},
+        {id:4,title:'smart watches',image:smartWatches,path:'smartWatches'},
+        {id:5,title:'consoles',image:consoles,path:'consoles'},
+        {id:6,title:'headphones',image:headphones,path:'headphones'},
+        {id:7,title:'portable columns',image:portableColumns,path:'portableColumns'},
+        {id:8,title:'accessories',image:accessories,path:'accessories'},
     ]
 
 
@@ -38,13 +40,14 @@ export const BestChoice = () => {
                 <a>Go to categories</a>
             </BoxStyled>
             <div>
-                <div>
-                    <img src="" alt=""/>
-                    <img src="" alt=""/>
-                    <img src="" alt=""/>
-                    <img src="" alt=""/>
-                    <img src="" alt=""/>
-                </div>
+                <CategoriesBoxStyled>
+                    {categories.map(c=> <CardCategories
+                        key={c.id}
+                        title={c.title}
+                        image={c.image}
+                        path={c.path}
+                    />)}
+                </CategoriesBoxStyled>
                 <div>
                     <button></button>
                     <button></button>
@@ -68,6 +71,13 @@ export const BestChoice = () => {
     );
 };
 
+const CategoriesBoxStyled = styled.div`
+  display: flex;
+  width: 1440px;
+  justify-content: space-between;
+  align-items: flex-start;
+`
+
 
 
 const SectionStyled = styled.section`
@@ -88,8 +98,4 @@ const BoxStyled = styled.div`
     font-weight: 500;
     line-height: 20px;
   }
-`
-
-const CardOfChoicesStyled = styled.a`
-  
 `
