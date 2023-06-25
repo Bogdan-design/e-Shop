@@ -146,6 +146,7 @@ const AppStyled = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
   
 `
 
