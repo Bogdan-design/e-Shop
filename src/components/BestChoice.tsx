@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {TitleH2Styled} from "../common/TitleH2.styled";
+import {TitleH3Styled} from "../common/TitleH3.styled";
 import styled from "styled-components";
 import smartphones from "../asset/imeges/BestChoiceImeges/Smartphones.png"
 import laptops from "../asset/imeges/BestChoiceImeges/Laptops.png"
@@ -52,7 +52,7 @@ export const BestChoice = () => {
     return (
         <SectionStyled>
             <BoxStyled>
-                <TitleH2Styled>Best choice</TitleH2Styled>
+                <TitleH3Styled>Best choice</TitleH3Styled>
                 <a>Go to categories</a>
             </BoxStyled>
             <CategoriesBoxStyled>

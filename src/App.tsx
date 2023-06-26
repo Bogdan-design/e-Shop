@@ -3,6 +3,7 @@ import {Header} from "./components/Header";
 import {Banners} from "./components/Banners";
 import styled from "styled-components";
 import {BestChoice} from "./components/BestChoice";
+import {Goals} from "./components/Goals";
 
 
 function App() {
@@ -12,28 +13,7 @@ function App() {
                 <Header/>
                 <Banners/>
                 <BestChoice/>
-                <section className='goal'>
-                    <h3>Our goal is to create a fantastic
-                        service for all consumers</h3>
-                    <ul>
-                        <li>
-                            <h4></h4>
-                            <p></p>
-                        </li>
-                        <li>
-                            <h4></h4>
-                            <p></p>
-                        </li>
-                        <li>
-                            <h4></h4>
-                            <p></p>
-                        </li>
-                        <li>
-                            <h4></h4>
-                            <p></p>
-                        </li>
-                    </ul>
-                </section>
+                <Goals/>
                 <section>
                     <div>
                         <h3>Save your time

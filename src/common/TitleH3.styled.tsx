@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TitleH2Styled= styled.h2`
+export const TitleH3Styled= styled.h3`
   color: var(--grayscale-1000, #0F1113);
   font-size: 24px;
   font-weight: 600;
