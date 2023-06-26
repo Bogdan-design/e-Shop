@@ -4,6 +4,7 @@ import {Banners} from "./components/Banners";
 import styled from "styled-components";
 import {BestChoice} from "./components/BestChoice";
 import {Goals} from "./components/Goals";
+import {BigBanner} from "./components/BigBanner";
 
 
 function App() {
@@ -14,19 +15,7 @@ function App() {
                 <Banners/>
                 <BestChoice/>
                 <Goals/>
-                <section>
-                    <div>
-                        <h3>Save your time
-                            and get the most
-                            from daily shopping</h3>
-                        <a>
-                            <img src="" alt=""/>
-                        </a>
-                        <a></a>
-                    </div>
-                    <img src={''}/>
-                    <img src={''}/>
-                </section>
+                <BigBanner/>
                 <section>
                     <div>
                         <h4>New</h4>

@@ -50,28 +50,29 @@ export const BestChoice = () => {
 
 
     return (
-        <SectionStyled>
-            <BoxStyled>
-                <TitleH3Styled>Best choice</TitleH3Styled>
-                <a>Go to categories</a>
-            </BoxStyled>
-            <CategoriesBoxStyled>
-                {categories.map(c => <CardCategories
-                    key={c.id}
-                    title={c.title}
-                    image={c.image}
-                    path={c.path}
-                />)}
-            </CategoriesBoxStyled>
-            <CardsFiledStyled>
-                <ButtonStyled></ButtonStyled>
-                <ProductCardBoxStyled>
-                    <FiltersBoxStyled>
-                        {filterOptions.map(f => <FilterButtonStyled>
-                            {f.name}
-                            <CancelButtonStyled></CancelButtonStyled>
-                        </FilterButtonStyled>)}
-                    </FiltersBoxStyled>
+        <TransformBgc>
+            <SectionStyled>
+                <BoxStyled>
+                    <TitleH3Styled>Best choice</TitleH3Styled>
+                    <a>Go to categories</a>
+                </BoxStyled>
+                <CategoriesBoxStyled>
+                    {categories.map(c => <CardCategories
+                        key={c.id}
+                        title={c.title}
+                        image={c.image}
+                        path={c.path}
+                    />)}
+                </CategoriesBoxStyled>
+                <CardsFiledStyled>
+                    <ButtonStyled></ButtonStyled>
+                    <ProductCardBoxStyled>
+                        <FiltersBoxStyled>
+                            {filterOptions.map(f => <FilterButtonStyled>
+                                {f.name}
+                                <CancelButtonStyled></CancelButtonStyled>
+                            </FilterButtonStyled>)}
+                        </FiltersBoxStyled>
                         <TableBoxStyled>
 
                             <ProductCard/>
@@ -80,12 +81,26 @@ export const BestChoice = () => {
                             <ProductCard/>
                         </TableBoxStyled>
 
-                </ProductCardBoxStyled>
-                <ButtonStyled></ButtonStyled>
-            </CardsFiledStyled>
-        </SectionStyled>
+                    </ProductCardBoxStyled>
+                    <ButtonStyled></ButtonStyled>
+                </CardsFiledStyled>
+            </SectionStyled>
+        </TransformBgc>
     );
 };
+
+
+const TransformBgc = styled.div`
+  background-color: #F2F5F9;
+
+  height: 1167px;
+  display: flex;
+  align-items: center;
+  clip-path: polygon(0 100%, 25% 0,75% 100%,100% 0);
+  
+  margin: 50px auto;
+
+`
 
 const ButtonStyled = styled.button`
   display: flex;
@@ -93,19 +108,19 @@ const ButtonStyled = styled.button`
   justify-content: center;
   align-items: center;
   border-radius: 1111px;
-  cursor: pointer;  
+  cursor: pointer;
   border: 1px solid var(--grayscale-200, #F2F5F9);
   background: var(--grayscale-0, #FDFDFD);
 `
 
-const TableBoxStyled=styled.div`
+const TableBoxStyled = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  
+
 `
 
-const ProductCardBoxStyled=styled.div`
+const ProductCardBoxStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -140,6 +155,7 @@ const SectionStyled = styled.section`
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  
 `
 
 const BoxStyled = styled.div`
