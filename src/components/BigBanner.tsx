@@ -35,10 +35,11 @@ const BoxButtonLink= styled.div`
   display: flex;
   align-items: flex-start;
   gap: 32px;
+  
 `
 const BannerSection = styled.section`
   display: flex;
-  width: 1440px;
+  margin-top: 80px;
   padding: 80px;
   flex-direction: column;
   align-items: flex-start;

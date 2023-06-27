@@ -13,6 +13,7 @@ import leftButton from "../asset/imeges/Arrow - Left 2.svg"
 import RightButton from "../asset/imeges/Arrow - Right 2.svg"
 import {CardCategories} from "../common/CardCategories";
 import {ProductCard} from "../components/ProductCard";
+import {SectionStyled} from "../common/Section.styled";
 
 type CategoriesType = {
     id: number
@@ -92,11 +93,11 @@ export const BestChoice = () => {
 
 const TransformBgc = styled.div`
   background-color: #F2F5F9;
-
+  
   height: 1167px;
   display: flex;
   align-items: center;
-  clip-path: polygon(0 100%, 25% 0,75% 100%,100% 0);
+  clip-path: polygon(0% 0%,100% 5%,100% 100%,0% 95%);
   
   margin: 50px auto;
 
@@ -150,13 +151,7 @@ const FiltersBoxStyled = styled.div`
   align-self: stretch;
 `
 
-const SectionStyled = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  
-`
+
 
 const BoxStyled = styled.div`
   display: flex;
