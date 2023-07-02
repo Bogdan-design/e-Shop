@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import {ButtonLink} from "./../common/ButtonLink";
-import arrowIcon from "../asset/imeges/Stroke 1.svg"
 
 export const Banners = () => {
     return (

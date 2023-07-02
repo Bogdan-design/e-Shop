@@ -48,7 +48,7 @@ const IconButton = styled.button`
   background-color: transparent;
   cursor: pointer;
   img {
-    border-radius: 50% 50%;
+    border-radius: 50%;
     border: 1px solid var(--grayscale-200, #F2F5F9);
     background:#FDFDFD;
   }

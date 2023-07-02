@@ -1,26 +1,19 @@
 import React, {useState} from 'react';
 import {TitleH3Styled} from "../common/TitleH3.styled";
 import styled from "styled-components";
-import smartphones from "../asset/imeges/BestChoiceImeges/Smartphones.png"
-import laptops from "../asset/imeges/BestChoiceImeges/Laptops.png"
-import tablets from "../asset/imeges/BestChoiceImeges/Tablets.png"
-import smartWatches from "../asset/imeges/BestChoiceImeges/SmartWatches.png"
-import consoles from "../asset/imeges/BestChoiceImeges/Consoles.png"
-import headphones from "../asset/imeges/BestChoiceImeges/Headphones.png"
-import portableColumns from "../asset/imeges/BestChoiceImeges/PortableColumns.png"
-import accessories from "../asset/imeges/BestChoiceImeges/Accessories.png"
-import leftButton from "../asset/imeges/Arrow - Left 2.svg"
-import RightButton from "../asset/imeges/Arrow - Right 2.svg"
 import {CardCategories} from "../common/CardCategories";
 import {ProductCard} from "../components/ProductCard";
 import {SectionStyled} from "../common/Section.styled";
+import smartphones from "../asset/imeges/BestChoiceImeges/Smartphones.png";
+import laptops from "../asset/imeges/BestChoiceImeges/Laptops.png";
+import tablets from "../asset/imeges/BestChoiceImeges/Tablets.png";
+import smartWatches from "../asset/imeges/BestChoiceImeges/SmartWatches.png";
+import consoles from "..asset/imeges/BestChoiceImeges/Consoles.png";
+import headphones from "../asset/imeges/BestChoiceImeges/Headphones.png";
+import portableColumns from "../asset/imeges/BestChoiceImeges/PortableColumns.png";
+import accessories from "../asset/imeges/BestChoiceImeges/Accessories.png";
 
-type CategoriesType = {
-    id: number
-    title: string
-    image: string
-    path: string
-}
+
 
 type filterOptionstype = {
     name: string
@@ -28,8 +21,7 @@ type filterOptionstype = {
 }
 
 export const BestChoice = () => {
-
-    const categories: CategoriesType[] = [
+  const  bestChoiceCategories = [
         {id: 1, title: 'smartphones', image: smartphones, path: 'smartphones'},
         {id: 2, title: 'laptops', image: laptops, path: 'laptops'},
         {id: 3, title: 'tablets', image: tablets, path: 'tablets'},
@@ -39,6 +31,7 @@ export const BestChoice = () => {
         {id: 7, title: 'portable columns', image: portableColumns, path: 'portableColumns'},
         {id: 8, title: 'accessories', image: accessories, path: 'accessories'},
     ]
+
 
     const [filterOptions, setFilterOptions] = useState<filterOptionstype[]>([
         {name: 'Design', status: false},
@@ -58,7 +51,7 @@ export const BestChoice = () => {
                     <a>Go to categories</a>
                 </BoxStyled>
                 <CategoriesBoxStyled>
-                    {categories.map(c => <CardCategories
+                    {bestChoiceCategories.map(c => <CardCategories
                         key={c.id}
                         title={c.title}
                         image={c.image}
@@ -75,13 +68,11 @@ export const BestChoice = () => {
                             </FilterButtonStyled>)}
                         </FiltersBoxStyled>
                         <TableBoxStyled>
-
                             <ProductCard/>
                             <ProductCard/>
                             <ProductCard/>
                             <ProductCard/>
                         </TableBoxStyled>
-
                     </ProductCardBoxStyled>
                     <ButtonStyled></ButtonStyled>
                 </CardsFiledStyled>
@@ -93,12 +84,10 @@ export const BestChoice = () => {
 
 const TransformBgc = styled.div`
   background-color: #F2F5F9;
-  
   height: 1167px;
   display: flex;
   align-items: center;
-  clip-path: polygon(0% 0%,100% 5%,100% 100%,0% 95%);
-  
+  clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 95%);
   margin: 50px auto;
 
 `
@@ -110,8 +99,8 @@ const ButtonStyled = styled.button`
   align-items: center;
   border-radius: 1111px;
   cursor: pointer;
-  border: 1px solid var(--grayscale-200, #F2F5F9);
-  background: var(--grayscale-0, #FDFDFD);
+  border: 1px solid #F2F5F9;
+  background: #FDFDFD;
 `
 
 const TableBoxStyled = styled.div`
@@ -152,7 +141,6 @@ const FiltersBoxStyled = styled.div`
 `
 
 
-
 const BoxStyled = styled.div`
   display: flex;
   justify-content: space-between;
@@ -188,5 +176,6 @@ const CancelButtonStyled = styled.button`
   stroke: red;
   cursor: pointer;
   border: none;
-  background: url("../asset/imeges/add.svg");
+  background-image: url("../asset/imeges/add.svg");
+  background-size: contain;
 `

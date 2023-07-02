@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import buttonFavorite from "../asset/imeges/ButtonLike.svg";
 import buttonCompare from "../asset/imeges/ButtonStatistic.svg";
 import {TitleH4Styled} from "../common/TitleH4.styled";

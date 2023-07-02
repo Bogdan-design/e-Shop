@@ -64,11 +64,19 @@ export const Footer = () => {
 const LinksBox = styled.div`
   display: flex;
   justify-content: space-evenly;
-  &::after {}
   padding: 20px;
+  position: relative;
   
-  width: 60vw;
-  border-bottom: 1px solid #A1ABB9;
+  &::after {
+    content: '';
+    width: 60vw;
+    height: 1px;
+    background-color: #A1ABB9;
+    position: absolute;
+    bottom: 0;
+    
+  }
+
 `
 
 
