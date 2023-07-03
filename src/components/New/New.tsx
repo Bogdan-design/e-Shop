@@ -1,7 +1,7 @@
 import React from 'react';
-import {TitleH3Styled} from "../../common/TitleH3.styled";
+import {TitleH3Styled} from "common/TitleH3.styled";
 import styled from "styled-components";
-import {SectionStyled} from "../../common/Section.styled";
+import {SectionStyled} from "common/Section.styled";
 import {NewPositionCard} from "../New/NewPositionCard";
 
 export const New = () => {

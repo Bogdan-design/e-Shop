@@ -4,14 +4,14 @@ import './index.css';
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 import {ThemeProvider} from "styled-components";
-import {theme} from "./styles/Theme.styled";
-import {GlobalStyles} from "./styles/GlobalStyles";
+import {theme} from "styles/Theme.styled";
+import {GlobalStyles} from "styles/GlobalStyles";
 import {BrowserRouter} from "react-router-dom";
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 
-type ThemeWithIterator = typeof theme & { [Symbol.iterator](): IterableIterator<string[]> };
+type ThemeWithIterator = typeof theme & {[key:string]: IterableIterator<string[]> };
 
 root.render(
     <BrowserRouter>

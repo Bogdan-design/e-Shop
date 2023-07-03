@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import Review1 from "../../asset/imeges/ReveiwsImg/Frame 2371.png"
+import Review1 from "asset/imeges/ReveiwsImg/frame2371.png"
 import ArrowRight from "../../asset/imeges/Arrow - Right 2.png"
 
 

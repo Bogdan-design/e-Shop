@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import styled from "styled-components";
-import arrowIcon from "./asset/imeges/Stroke 1.svg";
+import arrowIcon from "./asset/imeges/stroke-1.svg";
 
 
 type Props={

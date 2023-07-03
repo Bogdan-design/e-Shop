@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {ButtonLink} from "./../common/ButtonLink";
+import {ButtonLink} from "common/ButtonLink";
 
 export const Banners = () => {
     return (

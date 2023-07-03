@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
-import buttonFavorite from "../asset/imeges/ButtonLike.svg";
-import buttonCompare from "../asset/imeges/ButtonStatistic.svg";
-import {TitleH4Styled} from "../common/TitleH4.styled";
+import buttonFavorite from "asset/imeges/buttonLike.svg";
+import buttonCompare from "asset/imeges/buttonStatistic.svg";
+import {TitleH4Styled} from "common/TitleH4.styled";
 import styled from "styled-components";
-import iPhone from "../asset/imeges/BestChoiceImeges/Smartphones.png"
+import iPhone from "asset/imeges/BestChoiceImeges/smartphones.png"
 
 type Props = {
     category?: string

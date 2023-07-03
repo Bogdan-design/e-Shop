@@ -1,6 +1,6 @@
 import React from 'react';
-import {TitleH3Styled} from "../common/TitleH3.styled";
-import {TitleH2Styled} from "../common/TitleH2.styled";
+import {TitleH3Styled} from "common/TitleH3.styled";
+import {TitleH2Styled} from "common/TitleH2.styled";
 import styled from "styled-components";
 
 export const Goals = () => {

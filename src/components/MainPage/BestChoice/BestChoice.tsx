@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
-import {TitleH3Styled} from "../common/TitleH3.styled";
+import {TitleH3Styled} from "common/TitleH3.styled";
 import styled from "styled-components";
-import {CardCategories} from "../common/CardCategories";
-import {ProductCard} from "../components/ProductCard";
-import {SectionStyled} from "../common/Section.styled";
-import smartphones from "../asset/imeges/BestChoiceImeges/Smartphones.png";
-import laptops from "../asset/imeges/BestChoiceImeges/Laptops.png";
-import tablets from "../asset/imeges/BestChoiceImeges/Tablets.png";
-import smartWatches from "../asset/imeges/BestChoiceImeges/SmartWatches.png";
-import consoles from "..asset/imeges/BestChoiceImeges/Consoles.png";
-import headphones from "../asset/imeges/BestChoiceImeges/Headphones.png";
-import portableColumns from "../asset/imeges/BestChoiceImeges/PortableColumns.png";
-import accessories from "../asset/imeges/BestChoiceImeges/Accessories.png";
+import {CardCategories} from "common/CardCategories";
+import {ProductCard} from "components/ProductCard";
+import {SectionStyled} from "common/Section.styled";
+import smartphones from 'asset/imeges/BestChoiceImeges/smartphones.png';
+import laptops from 'asset/imeges/BestChoiceImeges/laptops.png';
+import tablets from 'asset/imeges/BestChoiceImeges/tablets.png';
+import smartWatches from 'asset/imeges/BestChoiceImeges/smartWatches.png';
+import consoles from 'asset/imeges/BestChoiceImeges/consoles.png';
+import headphones from 'asset/imeges/BestChoiceImeges/headphones.png';
+import portableColumns from 'asset/imeges/BestChoiceImeges/portableColumns.png';
+import accessories from 'asset/imeges/BestChoiceImeges/accessories.png';
+
 
 
 
@@ -176,6 +177,6 @@ const CancelButtonStyled = styled.button`
   stroke: red;
   cursor: pointer;
   border: none;
-  background-image: url("../asset/imeges/add.svg");
+  background-image: url("../../../asset/imeges/add.svg");
   background-size: contain;
 `

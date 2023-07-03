@@ -2,12 +2,12 @@ import React from 'react';
 import {Header} from "../components/Header";
 import {Banners} from "../components/Banners";
 import styled from "styled-components";
-import {BestChoice} from "../components/BestChoice";
+import {BestChoice} from "components/MainPage/BestChoice/BestChoice";
 import {Goals} from "../components/Goals";
 import {BigBanner} from "../components/BigBanner";
 import {New} from "../components/New/New";
 import {Reviews} from "../components/Reviews/Reviews";
-import {Footer} from "../components/Footer";
+import {Footer} from "components/Footer";
 
 
 function App() {

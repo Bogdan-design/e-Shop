@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import arrowDown from "../../asset/imeges/Arrow - Down 4.svg"
-import productImg from "../../asset/imeges/new.product/SmartWatch.png"
-import buttonFavorite from "../../asset/imeges/ButtonLike.svg"
-import buttonCompare from "../../asset/imeges/ButtonStatistic.svg"
+import arrowDown from "asset/imeges/arrow-down-4.svg"
+import productImg from "asset/imeges/new.product/smartWatch.png"
+import buttonFavorite from "asset/imeges/buttonLike.svg"
+import buttonCompare from "asset/imeges/buttonStatistic.svg"
 
 export const NewPositionCard = () => {
     return (

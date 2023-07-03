@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
-import {TitleH1Styled} from "../common/TitleH1.styled";
+import {TitleH1Styled} from "common/TitleH1.styled";
 import GooglePlay from "../asset/imeges/googlePlayLogo.svg"
 import TextGooglePlay from "../asset/imeges/path18056.svg"
 import AppleLogo from "../asset/imeges/appleLogo.svg"
-import AppStore from "../asset/imeges/AppStore.svg"
+import AppStore from "asset/imeges/appStore.svg"
 
 export const BigBanner = () => {
     return (
