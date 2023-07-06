@@ -5,6 +5,7 @@ import search from "asset/imeges/search.svg"
 import buttonFavorite from "asset/imeges/buttonLike.svg"
 import buttonCompare from "asset/imeges/buttonStatistic.svg"
 import userIcon from "asset/imeges/buttonUser.svg"
+import arrowDown3 from "asset/imeges/arrow-down3.svg"
 
 
 export const Header = () => {
@@ -16,17 +17,22 @@ export const Header = () => {
                     <p>The best prices in online stores</p>
                 </LogoBox>
                 <SearchBox>
-                    <SelectBoxStyled name="Catalog" id="">
-                        <OptionsStyled>Catalog</OptionsStyled>
-                        <OptionsStyled>Catalog</OptionsStyled>
-                        <OptionsStyled>Catalog</OptionsStyled>
-                    </SelectBoxStyled>
-                    <InputBox>
-                        <img src={search}/>
-                        <label id={'search'}>
-                            <InputStyled id={'search'} type="text" placeholder='search'/>
-                        </label>
-                    </InputBox>
+                    <InputOptionsBox>
+                        <SelectBox>
+                            <Select name="Catalog" id="">
+                                <OptionsStyled>Catalog</OptionsStyled>
+                                <OptionsStyled>Catalog</OptionsStyled>
+                                <OptionsStyled>Catalog</OptionsStyled>
+                            </Select>
+                            <img src={arrowDown3}/>
+                        </SelectBox>
+                        <InputBox>
+                            <img src={search}/>
+                            <label id={'search'}>
+                                <InputStyled id={'search'} type="text" placeholder='search'/>
+                            </label>
+                        </InputBox>
+                    </InputOptionsBox>
                     <a href="">
                         <img src={buttonFavorite} alt="button-favorite"/>
                     </a>
@@ -41,6 +47,21 @@ export const Header = () => {
         </div>
     );
 };
+
+const SelectBox = styled.div`
+  display: flex;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: #FF4D4D;
+`
+
+const InputOptionsBox = styled.div`
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+`
 
 const InputBox = styled.div`
   display: flex;
@@ -62,7 +83,7 @@ const SearchBox = styled.div`
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  
+
 `
 
 const HeaderStyled = styled.header`
@@ -82,14 +103,12 @@ const LogoBox = styled.div`
 
 `
 
-const SelectBoxStyled = styled.select`
-
-  color: #FFFFFF;
-  width: 200px;
-  height: 52px;
-  border: none;
-  border-radius: 8px 0 0 8px;
-  background-color: #FF4D4D;
+const Select = styled.select`
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
 
 `
 

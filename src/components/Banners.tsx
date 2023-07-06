@@ -4,45 +4,47 @@ import {ButtonLink} from "common/ButtonLink";
 
 export const Banners = () => {
     return (
-        <BannersBoxStyled>
-            <BannerStyled width='80%'>
-                <BannerTitle>
-                    <span>1.8 млн </span>товаров в <span>2272</span> магазинах найди, сравни, выберай!
-                </BannerTitle>
-                <ButtonLink href={'https://www.google.com/'} width={'246px'} title={'Go to categories'}/>
-            </BannerStyled>
-            <BannerStyled>
-                <BannerTitle>
-                    <span>Top 10</span> smartphones in 2023
-                </BannerTitle>
-                <ButtonLink href={'https://www.google.com/'} width={'147px'} title={`Look`}/>
-            </BannerStyled>
-        </BannersBoxStyled>
+        <BannersBox>
+            <BannersBoxStyled>
+                <BannerStyled>
+                    <BannerTitle>
+                        <span>1.8 млн </span>товаров в <span>2272</span> магазинах найди, сравни, выберай!
+                    </BannerTitle>
+                    <ButtonLink href={'https://www.google.com/'} width={'246px'} title={'Go to categories'}/>
+                </BannerStyled>
+                <BannerStyled>
+                    <BannerTitle>
+                        <span>Top 10</span> smartphones in 2023
+                    </BannerTitle>
+                    <ButtonLink href={'https://www.google.com/'} width={'147px'} title={`Look`}/>
+                </BannerStyled>
+            </BannersBoxStyled>
+        </BannersBox>
     );
 };
 
-type BannerStyledPropsType = {
-    width?: string
-}
+const BannersBox = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  
+`
+
 
 const BannersBoxStyled = styled.section`
   display: flex;
-  padding: 40px 0 ;
-  
-  
-  div+div{
-    margin-left: 32px;
-  }
-
+  width: 1440px;
+  align-items: flex-start;
+  gap: 32px;
 `
-const BannerStyled = styled.div<BannerStyledPropsType>`
-  width: ${props=>props.width};
-  background-color: antiquewhite;
-  border-radius: 25px;
-  height: 308px;
+const BannerStyled = styled.div`
   display: flex;
+  padding: 40px;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  border-radius: 16px;
+  background:#F2F5F9;
   
 `
 const BannerTitle = styled.h4`

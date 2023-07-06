@@ -39,6 +39,6 @@ const AppStyled = styled.div`
 `
 
 const BoxStyled= styled.div`
-    width: 1440px;
+   
   
 `
