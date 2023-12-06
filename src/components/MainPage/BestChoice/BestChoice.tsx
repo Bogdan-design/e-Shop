@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {CardCategories} from "common/CardCategories";
 import {ProductCard} from "components/ProductCard";
 import {SectionStyled} from "common/Section.styled";
-import smartphones from 'asset/imeges/BestChoiceImeges/smartphones.png';
+import smartphones from '../../../asset/imeges/product/iPhone.png';
 import laptops from 'asset/imeges/BestChoiceImeges/laptops.png';
 import tablets from 'asset/imeges/BestChoiceImeges/tablets.png';
 import smartWatches from 'asset/imeges/BestChoiceImeges/smartWatches.png';
@@ -87,6 +87,7 @@ const TransformBgc = styled.div`
   background-color: #F2F5F9;
   height: 1167px;
   display: flex;
+  justify-content: center;
   align-items: center;
   clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 95%);
   margin: 50px auto;
