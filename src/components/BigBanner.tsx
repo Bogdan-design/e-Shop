@@ -31,27 +31,28 @@ export const BigBanner = () => {
 };
 
 
-const BoxButtonLink= styled.div`
-  display: flex;
-  align-items: flex-start;
-  gap: 32px;
-  
-`
 const BannerSection = styled.section`
   display: flex;
+  justify-content: center;
+  
+`
+const BoxButtonLink= styled.div`
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
   margin-top: 80px;
   padding: 80px;
   flex-direction: column;
-  align-items: flex-start;
+
   gap: 10px;
   border-radius: 16px;
   background: #F6F7FA;
+  
 `
 const BannerBox = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
+  justify-content: flex-start;
+  align-items: center;
 `
 
 const BannerText = styled(TitleH1Styled)`

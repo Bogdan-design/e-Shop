@@ -29,6 +29,7 @@ type StyledType = {
 
 const ButtonLinkStyled = styled.a<StyledType>`
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 52px;
   width: ${props=>props.width};
