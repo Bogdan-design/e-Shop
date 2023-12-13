@@ -43,7 +43,7 @@ const BoxStyled = styled.div`
   align-self: stretch;
 
   a {
-    color: var(--main-primary, #FF4D4D);
+    color: #FF4D4D;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;

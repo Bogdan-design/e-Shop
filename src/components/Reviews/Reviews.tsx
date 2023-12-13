@@ -7,16 +7,18 @@ import {ReviewCard} from "components/Reviews/ReviewCard";
 export const Reviews = () => {
     return (
             <ReviewsBox>
-                <BoxStyled>
-                    <TitleH3Styled>Reviews</TitleH3Styled>
-                    <a>Go to Reviews</a>
-                </BoxStyled>
-                <LineOfProduct>
-                    <ReviewCard/>
-                    <ReviewCard/>
-                    <ReviewCard/>
-                    <ReviewCard/>
-                </LineOfProduct>
+                <ContentBox>
+                    <BoxStyled>
+                        <TitleH3Styled>Reviews</TitleH3Styled>
+                        <a>Go to Reviews</a>
+                    </BoxStyled>
+                    <LineOfProduct>
+                        <ReviewCard/>
+                        <ReviewCard/>
+                        <ReviewCard/>
+                        <ReviewCard/>
+                    </LineOfProduct>
+                </ContentBox>
             </ReviewsBox>
     )
         ;
@@ -25,6 +27,13 @@ export const Reviews = () => {
 const ReviewsBox = styled.div`
     display: flex;
     justify-content: center;
+    padding: 50px;
+`
+
+const ContentBox =styled.div`
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
 `
 
 const BoxStyled = styled.div`
